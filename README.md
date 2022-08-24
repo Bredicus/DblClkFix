@@ -19,7 +19,7 @@ You can ask for help by emailing capsmapper@gmail.com
 
 ## Authors
 
-DblClkFix is being developed by [Eddy B.](https://github.com/Bredicus):
+DblClkFix is being developed by [Eddy B.](https://github.com/Bredicus)
 
 ## License
 
