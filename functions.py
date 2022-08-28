@@ -77,8 +77,8 @@ def get_settings() -> dict:
         'mouse_check_r' : True,
         'time_limit_l': 50,
         'time_limit_r': 50,
-        'time_limit_mouse_up_l': 100,
-        'time_limit_mouse_up_r': 100
+        'time_limit_mouse_up_l': 50,
+        'time_limit_mouse_up_r': 50
     }
 
     if os.path.exists(settings_path):
@@ -92,8 +92,8 @@ def get_settings() -> dict:
         settings['mouse_check_r'] = get_valid_check_value(data.get('mouse_check_r', True))
         settings['time_limit_l'] = get_valid_time_limit(data.get('time_limit_l', 50), settings['time_limit_l'])
         settings['time_limit_r'] = get_valid_time_limit(data.get('time_limit_r', 50), settings['time_limit_r'])
-        settings['time_limit_mouse_up_l'] = get_valid_time_limit(data.get('time_limit_mouse_up_l', 100), settings['time_limit_mouse_up_l'])
-        settings['time_limit_mouse_up_r'] = get_valid_time_limit(data.get('time_limit_mouse_up_r', 100), settings['time_limit_mouse_up_r'])
+        settings['time_limit_mouse_up_l'] = get_valid_time_limit(data.get('time_limit_mouse_up_l', 50), settings['time_limit_mouse_up_l'])
+        settings['time_limit_mouse_up_r'] = get_valid_time_limit(data.get('time_limit_mouse_up_r', 50), settings['time_limit_mouse_up_r'])
     
     return settings
 
